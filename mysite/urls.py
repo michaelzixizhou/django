@@ -25,6 +25,9 @@ urlpatterns = [
     path('', views.home_view, name='home'),
     path('admin/', admin.site.urls),
     path('__debug__/', include(debug_toolbar.urls)),
+    path('about/', views.about_view, name='about'),
+    path('portfolio/', views.portfolio_view, name='portfolio'),
+    path('contact/', views.contact_view, name='contact')
 ]
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

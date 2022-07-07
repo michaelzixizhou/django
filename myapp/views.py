@@ -5,6 +5,15 @@ from .models import Project
 # Create your views here.
 
 def home_view(request, *args, **kwargs):
+    context = {
+
+    }
+    return render(request, 'home.html', context)
+
+def about_view(request, *args, **kwargs):
+    return render(request, 'about.html', {})
+
+def portfolio_view(request, *args, **kwargs):
     print(request.user)
     projects = Project.objects.all()
     url = str(Project.image).replace('static', '')
@@ -12,4 +21,7 @@ def home_view(request, *args, **kwargs):
     context = { # Dict only has one entry fpr projects
         'project': projects, 'url': url
     }
-    return render(request, 'home.html', context)
+    return render(request, 'portfolio.html', context)
+
+def contact_view(request, *args, **kwargs):
+    return render(request, 'contact.html', {})
