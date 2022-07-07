@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-^gnnv#exm6!6ek5!s@y9i&v$+^6z4q3asd$04*!cx5y+ipxd6(
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+# testingdwad
 
 # Application definition
 
@@ -51,6 +52,15 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
+
+# static files (CSS, JS, Images)
+STATIC_URL = 'static/'
+
+
+STATICFILES_DIR = [
+    os.path.join(BASE_DIR, "static")
+]
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 TEMPLATES = [
     {
