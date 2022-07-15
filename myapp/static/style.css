@@ -8,7 +8,7 @@ html{
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(#0b2d39, #040f13);
+    background: linear-gradient(#cc7000, #cc5500);
 }
 nav{
     width: 80%;
@@ -17,22 +17,35 @@ nav{
     z-index: 1;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid white;
 }
 .logo{
     flex-basis: 20%;
 }
 .logo img{
     width: 150px;
+
 }
+
+.logo .logo-text {
+    margin-bottom: 15px;
+}
+.logo .logo-text h1{
+    font-family: century;
+    color: white;
+}
+
 /* navbar */
 .nav-links{
     flex: 1;
     text-align: right;
+    margin-bottom: 15px;
 }
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
+    
 }
 .nav-links ul li a{
     color: #fff;

@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\micha\\OneDrive\\Desktop\\webapp\\webapp_env\\Scripts\\python"
+    "python.pythonPath": "C:\\Users\\micha\\OneDrive\\Desktop\\webapp\\webapp_env\\Scripts\\python",
+    "liveServer.settings.port": 5501
 }
